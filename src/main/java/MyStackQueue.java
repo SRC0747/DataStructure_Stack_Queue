@@ -24,9 +24,9 @@ public class PopTheStack {
         MyNode<Integer> myThirdNode = new MyNode(56);
         myFirstNode.setNext(mySecondNode);
         mySecondNode.setNext(myThirdNode);
-        myLinkedList.pop();
-        myLinkedList.pop();
-        myLinkedList.pop();
+        myStack.pop();
+        myStack.pop();
+        myStack.pop();
         boolean result = myFirstNode.getNext().equals(mySecondNode) && myFirstNode.getNext().getNext().equals(myThirdNode);
         Assert.assertTrue(result);
     }
