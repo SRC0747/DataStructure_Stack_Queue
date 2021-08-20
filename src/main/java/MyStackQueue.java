@@ -45,4 +45,22 @@ public class MyQueue {
     }
 }
 
+/*Dequeue */
+@Test
+public class MyQueue {
+    public void given3NumbersAddedToQueue(){
+        MyNode<Integer> myFirstNode = new MyNode(56);
+        MyNode<Integer> mySecondNode = new MyNode(30);
+        MyNode<Integer> myThirdNode = new MyNode(70);
+        myFirstNode.setNext(mySecondNode);
+        mySecondNode.setNext(myThirdNode);
+        boolean result = myFirstNode.getNext().equals(mySecondNode) && myFirstNode.getNext().getNext().equals(myThirdNode);
+        myLinkedList.enqueue_front(56);
+        myLinkedList.getfront();
+        myLinkedList.getrear();
+        myLinkedList.dequeue_front();
+        myLinkedList.dequeue_rear();
+        Assert.assertTrue(result);
+    }
+}
 
