@@ -24,9 +24,9 @@ public class PopTheStack {
         MyNode<Integer> myThirdNode = new MyNode(56);
         myFirstNode.setNext(mySecondNode);
         mySecondNode.setNext(myThirdNode);
-        myLinkedList.pop();
-        myLinkedList.pop();
-        myLinkedList.pop();
+        myStack.pop();
+        myStack.pop();
+        myStack.pop();
         boolean result = myFirstNode.getNext().equals(mySecondNode) && myFirstNode.getNext().getNext().equals(myThirdNode);
         Assert.assertTrue(result);
     }
@@ -55,11 +55,11 @@ public class MyQueue {
         myFirstNode.setNext(mySecondNode);
         mySecondNode.setNext(myThirdNode);
         boolean result = myFirstNode.getNext().equals(mySecondNode) && myFirstNode.getNext().getNext().equals(myThirdNode);
-        myLinkedList.enqueue_front(56);
-        myLinkedList.getfront();
-        myLinkedList.getrear();
-        myLinkedList.dequeue_front();
-        myLinkedList.dequeue_rear();
+        myQueue.enqueue_front(56);
+        myQueue.getfront();
+        myQueue.getrear();
+        myQueue.dequeue_front();
+        myQueue.dequeue_rear();
         Assert.assertTrue(result);
     }
 }
