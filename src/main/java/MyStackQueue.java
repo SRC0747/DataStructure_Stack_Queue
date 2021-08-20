@@ -13,7 +13,7 @@ public class MyStackQueue {
             Assert.assertTrue(result);
         }
     }
-}
+
 
 @Test
 /*Pop All the Elements from the Stack*/
@@ -31,5 +31,18 @@ public class PopTheStack {
         Assert.assertTrue(result);
     }
 }
+
+@Test
+public class MyQueue {
+    public void given3NumbersAddedToQueue(){
+        MyNode<Integer> myFirstNode = new MyNode(56);
+        MyNode<Integer> mySecondNode = new MyNode(30);
+        MyNode<Integer> myThirdNode = new MyNode(70);
+        myFirstNode.setNext(mySecondNode);
+        mySecondNode.setNext(myThirdNode);
+        boolean result = myFirstNode.getNext().equals(mySecondNode) && myFirstNode.getNext().getNext().equals(myThirdNode);
+        Assert.assertTrue(result);
+    }
 }
+
 
