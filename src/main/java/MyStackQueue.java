@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class MyStackQueue {
+public class MyStack {
         public void given3NumbersAddedToStack(){
             MyNode<Integer> myFirstNode = new MyNode(70);
             MyNode<Integer> mySecondNode = new MyNode(30);
